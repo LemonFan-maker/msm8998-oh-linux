@@ -3,7 +3,16 @@
 
 目前测试可以编译通过，也可以生成对应的vmlinux文件。
 
+## 【目前进度】
+
+- [x] OH内核态层 = OH Linux内核 + OH内核态特性（可选特性或者必选特性，如必选特性HDF，今后的可选特性HMDFS等）
+
+- [x] OH Linux内核 = 标准LTS Linux 内核 + 三方SoC芯片平台代码 + OH内核态基础代码（支撑OH用户态层运行的最基础代码）
+
+- [ ] OH内核态层 = 标准LTS Linux 内核 + 三方SoC芯片平台代码 + OH内核态基础代码 + OH内核态特性（如HDF）
+
 ## 【上游】
+
 内核上游来自[https://gitlab.com/Rikivt/linux/-/tree/nx563j/6.0](https://gitlab.com/Rikivt/linux/-/tree/nx563j/6.0)
 
 ## 【特点】
