@@ -1,0 +1,87 @@
+#ifndef __ASM_CPUCAPS_H
+#define __ASM_CPUCAPS_H
+
+/* Generated file - do not edit */
+
+#define ARM64_BTI                           	0
+#define ARM64_HAS_32BIT_EL0_DO_NOT_USE      	1
+#define ARM64_HAS_32BIT_EL1                 	2
+#define ARM64_HAS_ADDRESS_AUTH              	3
+#define ARM64_HAS_ADDRESS_AUTH_ARCH_QARMA3  	4
+#define ARM64_HAS_ADDRESS_AUTH_ARCH_QARMA5  	5
+#define ARM64_HAS_ADDRESS_AUTH_IMP_DEF      	6
+#define ARM64_HAS_AMU_EXTN                  	7
+#define ARM64_HAS_ARMv8_4_TTL               	8
+#define ARM64_HAS_CACHE_DIC                 	9
+#define ARM64_HAS_CACHE_IDC                 	10
+#define ARM64_HAS_CNP                       	11
+#define ARM64_HAS_CRC32                     	12
+#define ARM64_HAS_DCPODP                    	13
+#define ARM64_HAS_DCPOP                     	14
+#define ARM64_HAS_E0PD                      	15
+#define ARM64_HAS_ECV                       	16
+#define ARM64_HAS_EPAN                      	17
+#define ARM64_HAS_GENERIC_AUTH              	18
+#define ARM64_HAS_GENERIC_AUTH_ARCH_QARMA3  	19
+#define ARM64_HAS_GENERIC_AUTH_ARCH_QARMA5  	20
+#define ARM64_HAS_GENERIC_AUTH_IMP_DEF      	21
+#define ARM64_HAS_IRQ_PRIO_MASKING          	22
+#define ARM64_HAS_LDAPR                     	23
+#define ARM64_HAS_LSE_ATOMICS               	24
+#define ARM64_HAS_NO_FPSIMD                 	25
+#define ARM64_HAS_NO_HW_PREFETCH            	26
+#define ARM64_HAS_PAN                       	27
+#define ARM64_HAS_RAS_EXTN                  	28
+#define ARM64_HAS_RNG                       	29
+#define ARM64_HAS_SB                        	30
+#define ARM64_HAS_STAGE2_FWB                	31
+#define ARM64_HAS_SYSREG_GIC_CPUIF          	32
+#define ARM64_HAS_TIDCP1                    	33
+#define ARM64_HAS_TLB_RANGE                 	34
+#define ARM64_HAS_VIRT_HOST_EXTN            	35
+#define ARM64_HAS_WFXT                      	36
+#define ARM64_HW_DBM                        	37
+#define ARM64_KVM_PROTECTED_MODE            	38
+#define ARM64_MISMATCHED_CACHE_TYPE         	39
+#define ARM64_MTE                           	40
+#define ARM64_MTE_ASYMM                     	41
+#define ARM64_SME                           	42
+#define ARM64_SME_FA64                      	43
+#define ARM64_SPECTRE_V2                    	44
+#define ARM64_SPECTRE_V3A                   	45
+#define ARM64_SPECTRE_V4                    	46
+#define ARM64_SPECTRE_BHB                   	47
+#define ARM64_SSBS                          	48
+#define ARM64_SVE                           	49
+#define ARM64_UNMAP_KERNEL_AT_EL0           	50
+#define ARM64_WORKAROUND_834220             	51
+#define ARM64_WORKAROUND_843419             	52
+#define ARM64_WORKAROUND_845719             	53
+#define ARM64_WORKAROUND_858921             	54
+#define ARM64_WORKAROUND_1418040            	55
+#define ARM64_WORKAROUND_1463225            	56
+#define ARM64_WORKAROUND_1508412            	57
+#define ARM64_WORKAROUND_1542419            	58
+#define ARM64_WORKAROUND_1742098            	59
+#define ARM64_WORKAROUND_1902691            	60
+#define ARM64_WORKAROUND_2038923            	61
+#define ARM64_WORKAROUND_2064142            	62
+#define ARM64_WORKAROUND_2077057            	63
+#define ARM64_WORKAROUND_2457168            	64
+#define ARM64_WORKAROUND_TRBE_OVERWRITE_FILL_MODE	65
+#define ARM64_WORKAROUND_TSB_FLUSH_FAILURE  	66
+#define ARM64_WORKAROUND_TRBE_WRITE_OUT_OF_RANGE	67
+#define ARM64_WORKAROUND_CAVIUM_23154       	68
+#define ARM64_WORKAROUND_CAVIUM_27456       	69
+#define ARM64_WORKAROUND_CAVIUM_30115       	70
+#define ARM64_WORKAROUND_CAVIUM_TX2_219_PRFM	71
+#define ARM64_WORKAROUND_CAVIUM_TX2_219_TVM 	72
+#define ARM64_WORKAROUND_CLEAN_CACHE        	73
+#define ARM64_WORKAROUND_DEVICE_LOAD_ACQUIRE	74
+#define ARM64_WORKAROUND_NVIDIA_CARMEL_CNP  	75
+#define ARM64_WORKAROUND_QCOM_FALKOR_E1003  	76
+#define ARM64_WORKAROUND_REPEAT_TLBI        	77
+#define ARM64_WORKAROUND_SPECULATIVE_AT     	78
+#define ARM64_NCAPS				79
+
+#endif /* __ASM_CPUCAPS_H */

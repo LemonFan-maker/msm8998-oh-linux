@@ -1,0 +1,39 @@
+# MSM8998-OH-KERNEL-6.0
+这是自己~~闲得没事干~~为Nubia Z17(nx563j)移植的OpenHarmony系统内核
+
+目前测试可以编译通过，也可以生成对应的vmlinux文件。
+
+## 【上游】
+内核上游来自[https://gitlab.com/Rikivt/linux/-/tree/nx563j/6.0](https://gitlab.com/Rikivt/linux/-/tree/nx563j/6.0)
+
+## 【特点】
+
+- 开启了完整的Docker内核选项(*鸿蒙系统仍在移植中，故无法测试*)
+- 开启了`usb ssh`模式(*鸿蒙系统仍在移植中，故无法测试*)
+- 其他的?~~编不下去了~~
+
+## 【如何编译】
+
+1. 导入一堆环境
+```bash
+export PATH="$PATH:WorkingDir/prebuilts/clang/ohos/linux-x86_64/llvm/bin"
+```
+
+2. 准备config文件
+```bash
+make ARCH=arm64 nx563j_oh_defconfig
+```
+
+3. 开始编译
+```bash
+make ARCH=arm64 LLVM=1 \                                                                                               
+    LD="WorkingDir/prebuilts/clang/ohos/linux-x86_64/llvm/bin/ld.lld" \
+    CROSS_COMPILE=".WorkingDir/prebuilts/gcc/linux-x86/aarch64/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin/aarch64-linux-gnu-" \
+    CC="ccache WorkingDir/prebuilts/clang/ohos/linux-x86_64/llvm/bin/clang" \
+    HOSTCC="ccache WorkingDir/prebuilts/clang/ohos/linux-x86_64/llvm/bin/clang" \
+    PERL=/usr/bin/perl \
+    -j12
+```
+
+4. 等我把系统移植完刷内核就成
+:-)
